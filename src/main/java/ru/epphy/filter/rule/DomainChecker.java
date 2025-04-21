@@ -1,10 +1,17 @@
 package ru.epphy.filter.rule;
 
-final class DomainChecker implements IRule {
+import org.jetbrains.annotations.NotNull;
+
+public final class DomainChecker implements IRule {
 
     @Override
-    public boolean check() {
+    public boolean validate(@NotNull String guildId, @NotNull String content) {
         throw new UnsupportedOperationException("Not ready yet");
+    }
+
+    @Override
+    public Response getResponse() {
+        return null;
     }
 
 }

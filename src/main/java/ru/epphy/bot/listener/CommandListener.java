@@ -10,4 +10,5 @@ public final class CommandListener extends ListenerAdapter implements IListener 
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
         throw new UnsupportedOperationException("It's joever");
     }
+
 }

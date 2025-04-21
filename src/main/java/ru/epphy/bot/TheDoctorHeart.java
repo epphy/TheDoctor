@@ -8,6 +8,8 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.jetbrains.annotations.NotNull;
 import ru.epphy.bot.listener.CommandListener;
 import ru.epphy.bot.listener.MessageListener;
+import ru.epphy.filter.ChannelFilterManager;
+import ru.epphy.filter.FilterManager;
 import ru.epphy.util.LoggerUtil;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -40,8 +42,14 @@ public final class TheDoctorHeart {
                 .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT)
                 .build();
 
+        loadFilters();
         registerListeners();
         LoggerUtil.info(this, "Heartbeat has started");
+    }
+
+    private void loadFilters() {
+        ChannelFilterManager.init();
+        FilterManager.init();
     }
 
     private void registerListeners() {

@@ -1,5 +1,8 @@
 package ru.epphy.filter.rule;
 
+import org.jetbrains.annotations.NotNull;
+
 public interface IRule {
-    boolean check();
+    boolean validate(@NotNull String guildId, @NotNull String content);
+    Response getResponse();
 }

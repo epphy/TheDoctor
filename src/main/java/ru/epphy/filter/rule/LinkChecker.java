@@ -1,10 +1,17 @@
 package ru.epphy.filter.rule;
 
-final class LinkChecker implements IRule {
+import org.jetbrains.annotations.NotNull;
+
+public final class LinkChecker implements IRule {
 
     @Override
-    public boolean check() {
-        throw new UnsupportedOperationException("Not ready yet");
+    public boolean validate(@NotNull String guildId, @NotNull String content) {
+        return content.contains("https") || content.contains("http");
+    }
+
+    @Override
+    public Response getResponse() {
+        return null;
     }
 
 }

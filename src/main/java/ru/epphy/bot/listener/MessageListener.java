@@ -18,6 +18,7 @@ public final class MessageListener extends ListenerAdapter implements IListener 
     }
 
     private void handleMessage() {
-
+        throw new UnsupportedOperationException("It's joever");
     }
+
 }
