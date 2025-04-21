@@ -1,0 +1,4 @@
+[2025-04-21 21:21:08] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-21 21:21:08] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-21 21:21:08] [JDA MainWS-WriteThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-21 21:21:09] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
