@@ -15,7 +15,7 @@
 
     <Loggers>
         <!-- Root Logger: Applies to all classes -->
-        <Root level="info">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="FileLogger"/>
         </Root>

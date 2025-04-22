@@ -30,6 +30,10 @@ public final class FilterManager {
         LoggerUtil.info(instance, "initialized");
     }
 
+    public static void unload() {
+        instance = null;
+    }
+
     private void loadFilters() {
         rules.clear();
         rules.add(new LinkChecker());
@@ -39,7 +43,7 @@ public final class FilterManager {
 
     public boolean validateContent(@NotNull String guildId, @NotNull String channelId, @NotNull String userId, @NotNull String content) {
         for (final IRule rule : rules) {
-            if (!rule.validate(guildId, content)) {
+            if (!rule.validate(guildId, channelId, content)) {
                 LoggerUtil.debug(this, "[Guild: %s] [Channel: %s] [User: %s] Content: [ %s ] did not pass the check of %s"
                         .formatted(guildId, channelId, userId, content, rule.getClass().getSimpleName()));
                 return false;
@@ -53,7 +57,7 @@ public final class FilterManager {
 
     public Response validateContentWithResponse(@NotNull String guildId, @NotNull String channelId, @NotNull String userId, @NotNull String content) {
         for (final IRule rule : rules) {
-            if (!rule.validate(guildId, content)) {
+            if (!rule.validate(guildId, channelId, content)) {
                 LoggerUtil.debug(this, "[Guild: %s] [Channel: %s] [User: %s] Content: [ %s ] did not pass the check of %s"
                         .formatted(guildId, channelId, userId, content, rule.getClass().getSimpleName()));
                 return rule.getResponse();

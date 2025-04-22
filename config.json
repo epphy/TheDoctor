@@ -1,0 +1,14 @@
+{
+  "1210064394030162041": {
+    "guildId": "1210064394030162041",
+    "allowedDomainsByChannel": {
+      "1341366157306761318": [
+        "youtube"
+      ]
+    },
+    "filteredChannels": [
+      "1341366157306761318"
+    ],
+    "moderatorRoles": []
+  }
+}

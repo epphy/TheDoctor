@@ -4,12 +4,15 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.jetbrains.annotations.NotNull;
 import ru.epphy.bot.listener.CommandListener;
 import ru.epphy.bot.listener.MessageListener;
-import ru.epphy.filter.ChannelFilterManager;
+import ru.epphy.command.CommandManager;
+import ru.epphy.config.ConfigProvider;
 import ru.epphy.filter.FilterManager;
+import ru.epphy.storage.StorageManager;
 import ru.epphy.util.LoggerUtil;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -42,14 +45,28 @@ public final class TheDoctorHeart {
                 .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT)
                 .build();
 
+        loadConfig();
+        loadStorage();
         loadFilters();
+        loadCommand();
         registerListeners();
         LoggerUtil.info(this, "Heartbeat has started");
     }
 
+    private void loadConfig() {
+        ConfigProvider.init();
+    }
+
+    private void loadStorage() {
+        StorageManager.init();
+    }
+
     private void loadFilters() {
-        ChannelFilterManager.init();
         FilterManager.init();
+    }
+
+    private void loadCommand() {
+        CommandManager.init(jda);
     }
 
     private void registerListeners() {
@@ -66,6 +83,26 @@ public final class TheDoctorHeart {
 
     public void stopHeartbeat() {
         jda.shutdown();
+        unloadCommand();
+        unloadFilters();
+        unloadStorage();
+        unloadConfig();
         LoggerUtil.info(this, "Heartbeat has stopped");
+    }
+
+    private void unloadCommand() {
+        CommandManager.unload();
+    }
+
+    private void unloadFilters() {
+        FilterManager.unload();
+    }
+
+    private void unloadStorage() {
+        StorageManager.unload();
+    }
+
+    private void unloadConfig() {
+        ConfigProvider.unload();
     }
 }
