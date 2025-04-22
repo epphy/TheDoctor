@@ -14,7 +14,7 @@ public final class CommandListener extends ListenerAdapter implements IListener 
     }
 
     @Override
-    public void onCommandAutoCompleteInteraction(CommandAutoCompleteInteractionEvent event) {
-        CommandManager.getInstance().dispatchCommandTabComplete(event);
+    public void onCommandAutoCompleteInteraction(@NotNull CommandAutoCompleteInteractionEvent event) {
+        CommandManager.getInstance().dispatchCommandAutoComplete(event);
     }
 }

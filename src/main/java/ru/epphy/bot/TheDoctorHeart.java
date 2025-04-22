@@ -4,7 +4,6 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.jetbrains.annotations.NotNull;
 import ru.epphy.bot.listener.CommandListener;
@@ -14,6 +13,16 @@ import ru.epphy.config.ConfigProvider;
 import ru.epphy.filter.FilterManager;
 import ru.epphy.storage.StorageManager;
 import ru.epphy.util.LoggerUtil;
+
+/*
+Todo
+PLAN:
+1. Present the work
+2. Find a way to shut down the bot gracefully
+3. Use persistent container for duplicates rather than in-memory map
+4. Add setting of duration for how long messages can be kept
+5. Visualization graphs
+ */
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class TheDoctorHeart {

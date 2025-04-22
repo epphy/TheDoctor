@@ -850,3 +850,294 @@ https://www.youtube.com/watch?v=GAxYR2P3v7s"
 [2025-04-22 17:45:10] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
 [2025-04-22 17:45:19] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93458f981cb6c913-MRS]
 [2025-04-22 17:45:31] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 2 expired buckets
+[2025-04-22 22:28:11] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93472df63b6f9d2d-DXB]
+[2025-04-22 22:28:12] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[2025-04-22 22:28:12] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-22 22:28:12] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Creating new worker handle for shard pool 0
+[2025-04-22 22:28:12] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running worker
+[2025-04-22 22:28:12] [ConcurrentSessionController-Worker-0] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[2025-04-22 22:28:12] [main] INFO  ru.epphy.config.ConfigProvider - initialized
+[2025-04-22 22:28:12] [main] INFO  ru.epphy.storage.StorageManager - initialized
+[2025-04-22 22:28:12] [main] INFO  ru.epphy.filter.FilterManager - initialized
+[2025-04-22 22:28:12] [main] INFO  ru.epphy.command.CommandManager - initialized
+[2025-04-22 22:28:12] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-22 22:28:12] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93472df9bc1c9d2d-DXB]
+[2025-04-22 22:28:12] [ForkJoinPool.commonPool-worker-1] INFO  ru.epphy.command.CommandManager - Slash commands registered
+[2025-04-22 22:28:12] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash PUT/applications/{application_id}/commands -> 3e32a240d3716487d7d8f6dae6c54f6b
+[2025-04-22 22:28:13] [JDA MainWS-WriteThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-22 22:28:13] [JDA MainWS-WriteThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Connected with gateway intents: 11001100011011011011001101
+[2025-04-22 22:28:13] [JDA MainWS-WriteThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Sending Identify-packet...
+[2025-04-22 22:28:13] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+[2025-04-22 22:28:13] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Setting incomplete count to 2
+[2025-04-22 22:28:13] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Starting 75 second timeout for 2 guilds
+[2025-04-22 22:28:13] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Received READY with _trace [["gateway-prd-us-east1-b-fbw0",{"micros":64708,"calls":["id_created",{"micros":518,"calls":[]},"session_lookup_time",{"micros":1254,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-64",{"micros":57993,"calls":["start_session",{"micros":43348,"calls":["discord-api-rpc-84cf45c546-jn4v6",{"micros":35567,"calls":["get_user",{"micros":5345},"get_guilds",{"micros":3842},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":8},"pending_payments",{"micros":710},"apex_user_experiments",{"micros":2}]}]},"starting_guild_connect",{"micros":27,"calls":[]},"presence_started",{"micros":9408,"calls":[]},"guilds_started",{"micros":138,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5052,"calls":[]},"connect_finished",{"micros":5056,"calls":[]},"build_ready",{"micros":13,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]]
+[2025-04-22 22:28:14] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1210064394030162041 OwnerId: 730981825106673735
+[2025-04-22 22:28:14] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1210064394030162041 firing cached events 0
+[2025-04-22 22:28:14] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1342920369794715648 OwnerId: 1058749721834963026
+[2025-04-22 22:28:14] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-04-22 22:28:14] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1342920369794715648 firing cached events 0
+[2025-04-22 22:28:31] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93472e6f3fb52b24-MRS]
+[2025-04-22 22:28:31] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash POST/interactions/{interaction_id}/{interaction_token}/callback -> 432f6223265d156004ac81366c5a948f
+[2025-04-22 22:28:36] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93472e927de22b24-MRS]
+[2025-04-22 22:28:41] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 6 expired buckets
+[2025-04-22 22:29:11] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 22:29:16] [JDA MainWS-ReadThread] DEBUG ru.epphy.command.CommandManager - User '1364205573050208269' tried to access command but has no permission
+[2025-04-22 22:29:17] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93472f909912fb6d-MRS]
+[2025-04-22 22:29:41] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 22:30:03] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934730b11abd1262-DXB]
+[2025-04-22 22:30:03] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[2025-04-22 22:30:03] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-22 22:30:03] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Creating new worker handle for shard pool 0
+[2025-04-22 22:30:03] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running worker
+[2025-04-22 22:30:03] [ConcurrentSessionController-Worker-0] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[2025-04-22 22:30:03] [main] INFO  ru.epphy.config.ConfigProvider - initialized
+[2025-04-22 22:30:03] [main] INFO  ru.epphy.storage.StorageManager - initialized
+[2025-04-22 22:30:03] [main] INFO  ru.epphy.filter.FilterManager - initialized
+[2025-04-22 22:30:03] [main] INFO  ru.epphy.command.CommandManager - initialized
+[2025-04-22 22:30:03] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-22 22:30:04] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934730b43bbb1262-DXB]
+[2025-04-22 22:30:04] [ForkJoinPool.commonPool-worker-1] INFO  ru.epphy.command.CommandManager - Slash commands registered
+[2025-04-22 22:30:04] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash PUT/applications/{application_id}/commands -> 3e32a240d3716487d7d8f6dae6c54f6b
+[2025-04-22 22:30:05] [JDA MainWS-WriteThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-22 22:30:05] [JDA MainWS-WriteThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Connected with gateway intents: 11001100011011011011001101
+[2025-04-22 22:30:05] [JDA MainWS-WriteThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Sending Identify-packet...
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Setting incomplete count to 2
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Starting 75 second timeout for 2 guilds
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Received READY with _trace [["gateway-prd-us-east1-b-ts4n",{"micros":132749,"calls":["id_created",{"micros":416,"calls":[]},"session_lookup_time",{"micros":2153,"calls":[]},"session_lookup_finished",{"micros":19,"calls":[]},"discord-sessions-prd-2-142",{"micros":129776,"calls":["start_session",{"micros":116006,"calls":["discord-api-rpc-84cf45c546-56x7s",{"micros":68736,"calls":["get_user",{"micros":25483},"get_guilds",{"micros":9317},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":469},"authorized_ip_coro",{"micros":8},"pending_payments",{"micros":1837},"apex_user_experiments",{"micros":2}]}]},"starting_guild_connect",{"micros":29,"calls":[]},"presence_started",{"micros":2259,"calls":[]},"guilds_started",{"micros":97,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":11366,"calls":[]},"connect_finished",{"micros":11370,"calls":[]},"build_ready",{"micros":11,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]]
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1210064394030162041 OwnerId: 730981825106673735
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1210064394030162041 firing cached events 0
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1342920369794715648 OwnerId: 1058749721834963026
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-04-22 22:30:05] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1342920369794715648 firing cached events 0
+[2025-04-22 22:30:24] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93473130cefae278-MRS]
+[2025-04-22 22:30:24] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[2025-04-22 22:30:24] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-22 22:30:24] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Creating new worker handle for shard pool 0
+[2025-04-22 22:30:24] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running worker
+[2025-04-22 22:30:24] [ConcurrentSessionController-Worker-0] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[2025-04-22 22:30:24] [main] INFO  ru.epphy.config.ConfigProvider - initialized
+[2025-04-22 22:30:24] [main] INFO  ru.epphy.storage.StorageManager - initialized
+[2025-04-22 22:30:24] [main] INFO  ru.epphy.filter.FilterManager - initialized
+[2025-04-22 22:30:24] [main] INFO  ru.epphy.command.CommandManager - initialized
+[2025-04-22 22:30:24] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-22 22:30:24] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934731349a2be278-MRS]
+[2025-04-22 22:30:25] [ForkJoinPool.commonPool-worker-1] INFO  ru.epphy.command.CommandManager - Slash commands registered
+[2025-04-22 22:30:25] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash PUT/applications/{application_id}/commands -> 3e32a240d3716487d7d8f6dae6c54f6b
+[2025-04-22 22:30:25] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-22 22:30:25] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Connected with gateway intents: 11001100011011011011001101
+[2025-04-22 22:30:25] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Sending Identify-packet...
+[2025-04-22 22:30:25] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Setting incomplete count to 2
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Starting 75 second timeout for 2 guilds
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Received READY with _trace [["gateway-prd-us-east1-c-vw5s",{"micros":62815,"calls":["id_created",{"micros":872,"calls":[]},"session_lookup_time",{"micros":329,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-128",{"micros":61228,"calls":["start_session",{"micros":55819,"calls":["discord-api-rpc-84cf45c546-v9qh2",{"micros":45869,"calls":["get_user",{"micros":15624},"get_guilds",{"micros":3410},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":714},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":803},"apex_user_experiments",{"micros":2}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":371,"calls":[]},"guilds_started",{"micros":118,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":4870,"calls":[]},"connect_finished",{"micros":4874,"calls":[]},"build_ready",{"micros":12,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]]
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1342920369794715648 OwnerId: 1058749721834963026
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1342920369794715648 firing cached events 0
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1210064394030162041 OwnerId: 730981825106673735
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-04-22 22:30:26] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1210064394030162041 firing cached events 0
+[2025-04-22 22:30:49] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934731d1dc6de27e-MRS]
+[2025-04-22 22:30:49] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash POST/interactions/{interaction_id}/{interaction_token}/callback -> 432f6223265d156004ac81366c5a948f
+[2025-04-22 22:30:52] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934731dff891e27e-MRS]
+[2025-04-22 22:30:52] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 6 expired buckets
+[2025-04-22 22:30:57] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93473202fe42e27e-MRS]
+[2025-04-22 22:31:22] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 2 expired buckets
+[2025-04-22 22:31:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 22:31:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1341366157306761318] [User: 1364205573050208269] Validation triggered: "f"
+[2025-04-22 22:31:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1341366157306761318] [User: 1364205573050208269] Message bypassed validation.
+[2025-04-22 22:32:07] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934733b6df5483cc-MRS]
+[2025-04-22 22:32:12] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934733d29e5183cc-MRS]
+[2025-04-22 22:32:15] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934733e52aeb83cc-MRS]
+[2025-04-22 22:32:22] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 3 expired buckets
+[2025-04-22 22:34:40] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934737713bec1a5e-MRS]
+[2025-04-22 22:34:40] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[2025-04-22 22:34:40] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-22 22:34:40] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Creating new worker handle for shard pool 0
+[2025-04-22 22:34:40] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running worker
+[2025-04-22 22:34:40] [ConcurrentSessionController-Worker-0] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[2025-04-22 22:34:40] [main] INFO  ru.epphy.config.ConfigProvider - initialized
+[2025-04-22 22:34:40] [main] INFO  ru.epphy.storage.StorageManager - initialized
+[2025-04-22 22:34:40] [main] INFO  ru.epphy.filter.FilterManager - initialized
+[2025-04-22 22:34:40] [main] INFO  ru.epphy.command.CommandManager - initialized
+[2025-04-22 22:34:40] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-22 22:34:40] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934737750eb81a5e-MRS]
+[2025-04-22 22:34:40] [ForkJoinPool.commonPool-worker-1] INFO  ru.epphy.command.CommandManager - Slash commands registered
+[2025-04-22 22:34:40] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash PUT/applications/{application_id}/commands -> 3e32a240d3716487d7d8f6dae6c54f6b
+[2025-04-22 22:34:41] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-22 22:34:41] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Connected with gateway intents: 11001100011011011011001101
+[2025-04-22 22:34:41] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Sending Identify-packet...
+[2025-04-22 22:34:41] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Setting incomplete count to 2
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Starting 75 second timeout for 2 guilds
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Received READY with _trace [["gateway-prd-us-east1-d-4vgv",{"micros":61980,"calls":["id_created",{"micros":659,"calls":[]},"session_lookup_time",{"micros":1263,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-45",{"micros":59757,"calls":["start_session",{"micros":51163,"calls":["discord-api-rpc-84cf45c546-cwrgc",{"micros":42890,"calls":["get_user",{"micros":6588},"get_guilds",{"micros":6074},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":902},"authorized_ip_coro",{"micros":8},"pending_payments",{"micros":811},"apex_user_experiments",{"micros":3}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":2088,"calls":[]},"guilds_started",{"micros":104,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6353,"calls":[]},"connect_finished",{"micros":6356,"calls":[]},"build_ready",{"micros":13,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]]
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1210064394030162041 OwnerId: 730981825106673735
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1210064394030162041 firing cached events 0
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1342920369794715648 OwnerId: 1058749721834963026
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-04-22 22:34:42] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1342920369794715648 firing cached events 0
+[2025-04-22 22:35:08] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 3 expired buckets
+[2025-04-22 22:35:38] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 22:36:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 22:36:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1218972478303633521] [User: 730981825106673735] Validation triggered: "Discord Developers #developer-news"
+[2025-04-22 22:36:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1218972478303633521] [User: 730981825106673735] Message bypassed validation.
+[2025-04-22 23:22:49] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477dfa6b45125e-DXB]
+[2025-04-22 23:22:49] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash GET/users/@me -> 78bb8553d9352a5a2f89f9def401287a
+[2025-04-22 23:22:49] [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+[2025-04-22 23:22:49] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Creating new worker handle for shard pool 0
+[2025-04-22 23:22:49] [main] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running worker
+[2025-04-22 23:22:49] [ConcurrentSessionController-Worker-0] DEBUG net.dv8tion.jda.api.utils.SessionControllerAdapter - Running connect node for shard JDA.ShardInfo(currentShard=[0 / 1], totalShards=1)
+[2025-04-22 23:22:49] [main] INFO  ru.epphy.config.ConfigProvider - initialized
+[2025-04-22 23:22:49] [main] INFO  ru.epphy.storage.StorageManager - initialized
+[2025-04-22 23:22:49] [main] INFO  ru.epphy.filter.FilterManager - initialized
+[2025-04-22 23:22:49] [main] INFO  ru.epphy.command.CommandManager - initialized
+[2025-04-22 23:22:49] [main] INFO  ru.epphy.bot.TheDoctorHeart - Heartbeat has started
+[2025-04-22 23:22:50] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477dfdfd64125e-DXB]
+[2025-04-22 23:22:50] [ForkJoinPool.commonPool-worker-1] INFO  ru.epphy.command.CommandManager - Slash commands registered
+[2025-04-22 23:22:50] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash PUT/applications/{application_id}/commands -> 3e32a240d3716487d7d8f6dae6c54f6b
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Connected with gateway intents: 11001100011011011011001101
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Sending Identify-packet...
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Setting incomplete count to 2
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Starting 75 second timeout for 2 guilds
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.requests.WebSocketClient - Received READY with _trace [["gateway-prd-us-east1-d-kqcs",{"micros":48016,"calls":["id_created",{"micros":355,"calls":[]},"session_lookup_time",{"micros":346,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-33",{"micros":46935,"calls":["start_session",{"micros":45265,"calls":["discord-api-rpc-7c44745bd4-nwvkf",{"micros":37506,"calls":["get_user",{"micros":6299},"get_guilds",{"micros":9083},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":659},"apex_user_experiments",{"micros":1}]}]},"starting_guild_connect",{"micros":25,"calls":[]},"presence_started",{"micros":443,"calls":[]},"guilds_started",{"micros":144,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1038,"calls":[]},"connect_finished",{"micros":1041,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]]
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1342920369794715648 OwnerId: 1058749721834963026
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1342920369794715648 firing cached events 0
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 1210064394030162041 OwnerId: 730981825106673735
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-04-22 23:22:51] [JDA MainWS-ReadThread] DEBUG net.dv8tion.jda.internal.handle.GuildSetupController - Finished setup for guild 1210064394030162041 firing cached events 0
+[2025-04-22 23:23:18] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 3 expired buckets
+[2025-04-22 23:23:19] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:23:19] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 368521195940741122] Validation triggered: ""
+[2025-04-22 23:23:19] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 368521195940741122] Message bypassed validation.
+[2025-04-22 23:23:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Update
+[2025-04-22 23:23:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 368521195940741122] Validation triggered: ""
+[2025-04-22 23:23:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 368521195940741122] Message bypassed validation.
+[2025-04-22 23:23:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:23:22] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:23:34] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:23:34] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 730981825106673735] Validation triggered: "123"
+[2025-04-22 23:23:34] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 730981825106673735] Message bypassed validation.
+[2025-04-22 23:23:47] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:23:47] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "123"
+[2025-04-22 23:23:47] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Message bypassed validation.
+[2025-04-22 23:23:48] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 23:23:54] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477f936bfae22d-MRS]
+[2025-04-22 23:23:54] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash POST/interactions/{interaction_id}/{interaction_token}/callback -> 432f6223265d156004ac81366c5a948f
+[2025-04-22 23:23:57] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477fa0ff51e22d-MRS]
+[2025-04-22 23:24:01] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477fb95dc9e22d-MRS]
+[2025-04-22 23:24:07] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477fdff931e22d-MRS]
+[2025-04-22 23:24:07] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93477fe289c0e22d-MRS]
+[2025-04-22 23:24:11] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:24:11] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "123"
+[2025-04-22 23:24:11] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Message bypassed validation.
+[2025-04-22 23:24:18] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 6 expired buckets
+[2025-04-22 23:24:30] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93478071acab124f-DXB]
+[2025-04-22 23:24:32] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347807fe9dc124f-DXB]
+[2025-04-22 23:24:39] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934780a70a4e124f-DXB]
+[2025-04-22 23:24:39] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934780aaeb94124f-DXB]
+[2025-04-22 23:24:40] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934780aebd3c124f-DXB]
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "123"
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ 123 ] did not pass the check of LinkChecker
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Failed validation: "123"
+[2025-04-22 23:24:45] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934780cfc98a124f-DXB]
+[2025-04-22 23:24:45] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash DELETE/channels/{channel_id}/messages/{message_id} -> 3df15bae86f6647dd4dfcbd5c6949480
+[2025-04-22 23:24:45] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934780cfd992124f-DXB]
+[2025-04-22 23:24:45] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 3df15bae86f6647dd4dfcbd5c6949480
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Validation triggered: "❌ Message was removed.
+- Must be a valid, unique link.
+- Allowed domains: []
+- Message time: `not completed`"
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Message bypassed validation.
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:24:45] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:24:48] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 8 expired buckets
+[2025-04-22 23:24:57] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934781187bc9e1f8-MRS]
+[2025-04-22 23:25:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "321"
+[2025-04-22 23:25:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ 321 ] did not pass the check of LinkChecker
+[2025-04-22 23:25:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Failed validation: "321"
+[2025-04-22 23:25:09] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347816359aae23e-MRS]
+[2025-04-22 23:25:09] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:09] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:25:09] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:09] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Validation triggered: "❌ Message was removed.
+- Must be a valid, unique link.
+- Allowed domains: []
+- Message time: `not completed`"
+[2025-04-22 23:25:09] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Message bypassed validation.
+[2025-04-22 23:25:09] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93478166bb6fe23e-MRS]
+[2025-04-22 23:25:18] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 23:25:21] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934781ad6e22e288-MRS]
+[2025-04-22 23:25:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "https://youtube.com/"
+[2025-04-22 23:25:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ https://youtube.com/ ] did not pass the check of DomainChecker
+[2025-04-22 23:25:31] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Failed validation: "https://youtube.com/"
+[2025-04-22 23:25:33] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934781f98a3be27c-MRS]
+[2025-04-22 23:25:33] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:33] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Validation triggered: "❌ Message was removed.
+- Must be a valid, unique link.
+- Allowed domains: []
+- Message time: `not completed`"
+[2025-04-22 23:25:33] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Message bypassed validation.
+[2025-04-22 23:25:33] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934781fd0c76e27c-MRS]
+[2025-04-22 23:25:34] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:25:34] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:25:45] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782449f2ce22d-MRS]
+[2025-04-22 23:25:48] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 23:25:57] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347829189efe238-MRS]
+[2025-04-22 23:25:59] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347829de813e238-MRS]
+[2025-04-22 23:26:00] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782a4fdc6e238-MRS]
+[2025-04-22 23:26:01] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782aa2e4ee238-MRS]
+[2025-04-22 23:26:03] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782b919b1e238-MRS]
+[2025-04-22 23:26:06] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782cc5bf2e238-MRS]
+[2025-04-22 23:26:08] [JDA RateLimit-Elastic-Worker 1] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782d4bcf6e238-MRS]
+[2025-04-22 23:26:08] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934782d65a56e238-MRS]
+[2025-04-22 23:26:18] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 8 expired buckets
+[2025-04-22 23:26:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:26:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "https://youtube.com/dkanfsdf=34"
+[2025-04-22 23:26:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ https://youtube.com/dkanfsdf=34 ] passed the check
+[2025-04-22 23:26:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Passed validation.
+[2025-04-22 23:26:22] [JDA MainWS-ReadThread] DEBUG ru.epphy.storage.impl.InMemoryStorage - Added 'https://youtube.com/dkanfsdf=34' to channel '1360348098291044521' of guild '1210064394030162041': true
+[2025-04-22 23:26:35] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:26:35] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "https://youtube.com/dkanfsdf=34"
+[2025-04-22 23:26:35] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ https://youtube.com/dkanfsdf=34 ] did not pass the check of DuplicateChecker
+[2025-04-22 23:26:35] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Failed validation: "https://youtube.com/dkanfsdf=34"
+[2025-04-22 23:26:35] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93478380eba3b47e-DXB]
+[2025-04-22 23:26:36] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934783837cc1b47e-DXB]
+[2025-04-22 23:26:36] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:26:36] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:26:36] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:26:36] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Validation triggered: "❌ Message was removed.
+- Must be a valid, unique link.
+- Allowed domains: [youtube]
+- Message time: `not completed`"
+[2025-04-22 23:26:36] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Message bypassed validation.
+[2025-04-22 23:26:47] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [934783cb0ca5e27a-MRS]
+[2025-04-22 23:26:48] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 23:26:56] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:26:56] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "https://youtube.com/another-video"
+[2025-04-22 23:26:56] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ https://youtube.com/another-video ] passed the check
+[2025-04-22 23:26:56] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Passed validation.
+[2025-04-22 23:26:56] [JDA MainWS-ReadThread] DEBUG ru.epphy.storage.impl.InMemoryStorage - Added 'https://youtube.com/another-video' to channel '1360348098291044521' of guild '1210064394030162041': true
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Update
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Validation triggered: "https://youtube.com/dkanfsdf=34"
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.filter.FilterManager - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Content: [ https://youtube.com/dkanfsdf=34 ] did not pass the check of DuplicateChecker
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1364205573050208269] Failed validation: "https://youtube.com/dkanfsdf=34"
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:27:07] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:27:08] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347844bfcb5e243-MRS]
+[2025-04-22 23:27:08] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:27:08] [JDA MainWS-ReadThread] WARN  ru.epphy.bot.listener.MessageListener - Missing required data: member/guild/channel/message is null.
+[2025-04-22 23:27:08] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - Receive
+[2025-04-22 23:27:08] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Validation triggered: "❌ Message was removed.
+- Must be a valid, unique link.
+- Allowed domains: [youtube]
+- Message time: `not completed`"
+[2025-04-22 23:27:08] [JDA MainWS-ReadThread] DEBUG ru.epphy.bot.listener.MessageListener - [Guild: 1210064394030162041] [Channel: 1360348098291044521] [User: 1360342802252435576] Message bypassed validation.
+[2025-04-22 23:27:09] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [9347844f8feae243-MRS]
+[2025-04-22 23:27:18] [JDA RateLimit-Scheduler-Worker 1] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets
+[2025-04-22 23:27:19] [JDA RateLimit-Elastic-Worker 2] DEBUG net.dv8tion.jda.internal.requests.Requester - Received response with following cf-rays: [93478491bfa3125e-DXB]
+[2025-04-22 23:27:48] [JDA RateLimit-Scheduler-Worker 2] DEBUG net.dv8tion.jda.api.requests.RestRateLimiter - Removed 1 expired buckets

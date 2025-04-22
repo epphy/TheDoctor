@@ -7,25 +7,20 @@ import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
-import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.command.CommandAutoCompleteInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
-import net.dv8tion.jda.api.interactions.commands.build.Commands;
-import net.dv8tion.jda.api.interactions.commands.build.SlashCommandData;
+import org.jetbrains.annotations.NotNull;
 import ru.epphy.command.impl.CommandContext;
 import ru.epphy.command.impl.ConfigCommand;
 import ru.epphy.command.impl.ICommand;
 import ru.epphy.config.ConfigProvider;
-import ru.epphy.config.model.GuildSettings;
 import ru.epphy.util.LoggerUtil;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import static net.dv8tion.jda.api.interactions.commands.OptionType.STRING;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class CommandManager {
@@ -34,124 +29,100 @@ public final class CommandManager {
 
     public static CommandManager getInstance() {
         if (instance == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("Not initialized yet");
         }
         return instance;
     }
 
-    public static void init(JDA jda) {
+    public static void init(@NotNull JDA jda) {
         if (instance == null) {
             instance = new CommandManager();
         }
-
         instance.registerCommands(jda);
         LoggerUtil.info(instance, "initialized");
-    }
-
-    private void registerCommands(JDA jda) {
-        final ConfigCommand configCommand = new ConfigCommand();
-
-        final SlashCommandData configSlashCommand = Commands.slash("config", "Manage guild configuration")
-                .addOption(STRING, "key", "The config section (allowed-domains, moderator-roles, filtered-channels)", true, true)
-                .addOption(STRING, "action", "The action to perform (show, add, remove)", true, true)
-                .addOption(STRING, "value", "Value to insert (not needed for show)", false, true);
-
-        jda.updateCommands()
-                .addCommands(configSlashCommand)
-                .queue(success -> LoggerUtil.info(this, "Slash commands registered."),
-                        error -> LoggerUtil.error(this, "Failed to register slash commands", error));
-
-        commands.put("config", configCommand);
     }
 
     public static void unload() {
         instance = null;
     }
 
-    public void dispatchCommand(SlashCommandInteractionEvent event) {
-        if (!hasPermission(event.getGuild().getId(), event.getMember())) return;
+    private void registerCommands(JDA jda) {
+        register(new ConfigCommand());
 
-        final String command = event.getName();
-        final ICommand commandExecutor = commands.get(command);
+        jda.updateCommands()
+                .addCommands(commands.values().stream()
+                        .map(ICommand::getSlashCommandData)
+                        .toList())
+                .queue(
+                        success -> LoggerUtil.info(this, "Slash commands registered"),
+                        error -> LoggerUtil.error(this, "Failed to register slash commands", error)
+                );
+    }
 
-        if (commandExecutor == null) {
-            handleInvalidUsage(event);
+    private void register(@NotNull ICommand command) {
+        commands.put(command.getName(), command);
+    }
+
+    public void dispatchCommand(@NotNull SlashCommandInteractionEvent event) {
+        final ICommand command = commands.get(event.getName());
+
+        if (command == null) {
+            handleInvalidUsage(event, "Unknown command.");
             return;
         }
 
-        final String key = getOptionValue(event, "key");
-        final String action = getOptionValue(event, "action");
-        final String value = getOptionValue(event, "value");
+        final Guild guild = event.getGuild();
+        final Member member = event.getMember();
 
-        if (key == null || action == null) {
-            handleInvalidUsage(event);
+        if (guild == null || member == null) {
+            handleInvalidUsage(event, "Guild or member is null.");
             return;
         }
 
-        // Build an args list depending on presence
-        final List<String> args = value != null
-                ? List.of(key, action, value)
-                : List.of(key, action);
+        if (!hasPermission(guild.getId(), member)) {
+            handleInvalidUsage(event, "Insufficient permissions.");
+            return;
+        }
 
+        final CommandContext context = buildContext(event, guild, member);
+        command.execute(context);
+    }
 
+    public void dispatchCommandAutoComplete(@NotNull CommandAutoCompleteInteractionEvent event) {
+        final ICommand command = commands.get(event.getName());
+        if (command != null) {
+            command.handleAutoComplete(event);
+        } else {
+            event.replyChoices(List.of()).queue();
+        }
+    }
 
-        final CommandContext commandContext = new CommandContext(
-                event.getGuild().getId(),
-                event.getChannelId(),
-                event.getUser().getId(),
-                args,
-                event.getUser(),
-                event.getMember(),
-                event.getGuild(),
+    @NotNull
+    private CommandContext buildContext(SlashCommandInteractionEvent event, Guild guild, Member member) {
+        return new CommandContext(
+                guild,
+                event.getChannel(),
+                member,
+                member.getUser(),
+                event.getOptions().stream().map(OptionMapping::getAsString).toList(),
                 event
         );
-
-        commandExecutor.execute(commandContext);
     }
 
-    public void dispatchCommandTabComplete(CommandAutoCompleteInteractionEvent event) {
-
-    }
-
-    private void routeCommand() {
-
-    }
-
-    private void executeCommand(ICommand command, Guild guild, MessageChannel channel, Member member, List<String> args) {
-        final var commandContext = new CommandContext(
-                guild.getId(),
-                channel.getId(),
-                member.getUser().getId(),
-                args,
-                member.getUser(),
-                member,
-                guild,
-
-        );
-
-        command.execute(commandContext);
+    private void handleInvalidUsage(@NotNull SlashCommandInteractionEvent event, String reason) {
+        event.reply("❌ Invalid command or insufficient permissions.").setEphemeral(true).queue();
+        LoggerUtil.warn(this, "Command '%s' failed: %s".formatted(event.getName(), reason));
     }
 
     private boolean hasPermission(String guildId, Member member) {
-        final GuildSettings guildSettings = ConfigProvider.getInstance().getRegistry().getGuildSettings(guildId);
-        final Set<String> moderatorIdRoles = guildSettings.getModeratorRoles();
+        if (member.isOwner() || member.getPermissions().contains(Permission.ADMINISTRATOR)) return true;
 
-        if (member.isOwner() || member.getPermissions().contains(Permission.ADMINISTRATOR))
-            return true;
+        final Set<String> moderatorIdRoles = ConfigProvider.getInstance().getRegistry()
+                .getGuildSettings(guildId)
+                .getModeratorRoles();
 
-        for (final Role role : member.getRoles()) {
-            if (moderatorIdRoles.contains(role.getId())) return true;
-        }
-
-        return false;
-    }
-
-    private String getOptionValue(SlashCommandInteractionEvent event, String name) {
-        final OptionMapping option = event.getOption(name);
-        return option != null ? option.getAsString() : null;
-    }
-
-    private void handleInvalidUsage(SlashCommandInteractionEvent event) {
-        event.reply("Invalid command").setEphemeral(true).queue();
+        return member.getRoles().stream()
+                .map(Role::getId)
+                .anyMatch(moderatorIdRoles::contains);
     }
 }

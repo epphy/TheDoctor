@@ -4,10 +4,14 @@
     "allowedDomainsByChannel": {
       "1341366157306761318": [
         "youtube"
+      ],
+      "1360348098291044521": [
+        "youtube"
       ]
     },
     "filteredChannels": [
-      "1341366157306761318"
+      "1341366157306761318",
+      "1360348098291044521"
     ],
     "moderatorRoles": []
   }
